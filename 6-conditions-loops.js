@@ -222,6 +222,6 @@ for (let i = 0; i < input.length; i++) {
     } else {
         // Добавляем исходный символ только если это не 'a', 'e', 'i'.
         output += input[i];
-}
+    }
 }
 console.log(output);
