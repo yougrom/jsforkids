@@ -178,3 +178,25 @@ function multiply(arg1, arg2) {
 let result = add(multiply(36325, 9824), + 777);
 console.log(result);
 
+// Exersise 2
+function areArraysSame(a, b) {
+    if (a.length !== b.length) {
+        return false;
+    } 
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] !== b[i]) {
+            return false;
+        } 
+    }
+    return true;
+}
+let resultArrays = areArraysSame([1, 4, 3], [1, 2, 3]);
+console.log(resultArrays);
+
+// Exersise 2_1
+function areArraysSame(a, b) {
+    return a.length === b.length && a.every((element, index) => element === b[index]);
+}
+let resultArrays1 = areArraysSame([1, 4, 3], [1, 2, 3]);
+console.log(resultArrays1);  // Output: false
+
